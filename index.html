@@ -1,0 +1,1420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FitForge - Modern Gym & Fitness Center. Build strength, build confidence. Train smarter, get stronger, and become the best version of yourself.">
+    <meta name="keywords" content="gym, fitness, strength training, yoga, crossfit, HIIT, personal training, weight loss">
+    <title>FitForge - Modern Gym & Fitness Center</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+  <meta property="og:image" content="https://bolt.new/static/og_default.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80" tabindex="0">
+
+    <!-- ==================== 1. NAVIGATION BAR ==================== -->
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#hero">
+                <i class="bi bi-lightning-charge-fill brand-icon"></i>
+                <span class="brand-text">FitForge</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navOffcanvas" aria-controls="navOffcanvas" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#programs">Programs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#trainers">Trainers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn btn-cta btn-sm px-3" href="#pricing" data-bs-toggle="offcanvas" data-bs-target="#joinOffcanvas">Join Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Offcanvas for mobile menu -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="navOffcanvas" aria-labelledby="navOffcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title d-flex align-items-center gap-2" id="navOffcanvasLabel">
+                <i class="bi bi-lightning-charge-fill brand-icon"></i> FitForge
+            </h5>
+            <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav flex-column gap-2">
+                <li class="nav-item"><a class="nav-link" href="#hero" data-bs-dismiss="offcanvas">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about" data-bs-dismiss="offcanvas">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#programs" data-bs-dismiss="offcanvas">Programs</a></li>
+                <li class="nav-item"><a class="nav-link" href="#trainers" data-bs-dismiss="offcanvas">Trainers</a></li>
+                <li class="nav-item"><a class="nav-link" href="#pricing" data-bs-dismiss="offcanvas">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link" href="#schedule" data-bs-dismiss="offcanvas">Schedule</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact" data-bs-dismiss="offcanvas">Contact</a></li>
+                <li class="nav-item mt-3">
+                    <a class="btn btn-cta w-100" href="#pricing" data-bs-dismiss="offcanvas" data-bs-toggle="offcanvas" data-bs-target="#joinOffcanvas">Join Now</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ==================== 2. HERO SECTION ==================== -->
+    <header id="hero" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content position-relative">
+            <div class="row">
+                <div class="col-lg-9">
+                    <p class="hero-subtitle reveal" data-reveal="fade-down">Welcome to FitForge</p>
+                    <h1 class="hero-title reveal" data-reveal="fade-up">
+                        Build Strength. <span class="text-accent">Build Confidence.</span>
+                    </h1>
+                    <p class="hero-text reveal" data-reveal="fade-up" data-reveal-delay="200">
+                        Your body deserves the best. Train smarter, get stronger, and become the best version of yourself.
+                    </p>
+                    <div class="hero-buttons reveal" data-reveal="fade-up" data-reveal-delay="400">
+                        <a href="#pricing" class="btn btn-cta btn-lg me-2 mb-2" data-bs-toggle="offcanvas" data-bs-target="#joinOffcanvas">
+                            <i class="bi bi-play-circle me-2"></i>Start Your Journey
+                        </a>
+                        <a href="#programs" class="btn btn-outline-light btn-lg mb-2">
+                            Explore Programs
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-stats row g-3 mt-4 reveal" data-reveal="fade-up" data-reveal-delay="600">
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <h2 class="stat-number" data-count="5000" data-suffix="+">0</h2>
+                        <p class="stat-label">Members</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <h2 class="stat-number" data-count="25" data-suffix="+">0</h2>
+                        <p class="stat-label">Expert Trainers</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <h2 class="stat-number" data-count="50" data-suffix="+">0</h2>
+                        <p class="stat-label">Weekly Classes</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <h2 class="stat-number" data-count="10" data-suffix="+">0</h2>
+                        <p class="stat-label">Years Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="hero-scroll" aria-label="Scroll down">
+            <i class="bi bi-chevron-down"></i>
+        </a>
+    </header>
+
+    <!-- ==================== 3. ABOUT SECTION ==================== -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 reveal" data-reveal="fade-right">
+                    <div class="about-image-wrapper">
+                        <img src="https://images.pexels.com/photos/4716814/pexels-photo-4716814.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Modern FitForge gym interior with treadmills and fitness machines" class="img-fluid rounded-4 about-main-img" loading="lazy">
+                        <div class="about-experience-badge">
+                            <span class="experience-number">10+</span>
+                            <span class="experience-text">Years of<br>Excellence</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 reveal" data-reveal="fade-left">
+                    <p class="section-subtitle">About Us</p>
+                    <h2 class="section-title">More Than Just a Gym</h2>
+                    <p class="section-text mt-3">
+                        At FitForge, we believe fitness is a lifestyle, not a destination. Our mission is to empower every member
+                        to unlock their full potential through expert coaching, world-class facilities, and a community that
+                        pushes you to be your best. From your first session to your hundredth PR, we are with you every rep of the way.
+                    </p>
+                    <p class="section-text">
+                        Our 12,000 sq ft facility features the latest strength and cardio equipment, dedicated functional training zones,
+                        a private yoga studio, and recovery amenities. Every program is designed by certified professionals who tailor
+                        training to your goals, your body, and your schedule.
+                    </p>
+                    <div class="row g-3 mt-2">
+                        <div class="col-sm-6">
+                            <div class="about-feature">
+                                <i class="bi bi-broadcast"></i>
+                                <div>
+                                    <h4>Modern Equipment</h4>
+                                    <p>Latest Hammer Strength & Technogym machines</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="about-feature">
+                                <i class="bi bi-award-fill"></i>
+                                <div>
+                                    <h4>Certified Trainers</h4>
+                                    <p>NASM & ACE certified professionals</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="about-feature">
+                                <i class="bi bi-person-gear"></i>
+                                <div>
+                                    <h4>Personalized Training</h4>
+                                    <p>Programs tailored to your goals</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="about-feature">
+                                <i class="bi bi-egg-fried"></i>
+                                <div>
+                                    <h4>Nutrition Guidance</h4>
+                                    <p>Custom meal plans & dietary coaching</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#programs" class="btn btn-cta mt-4">Learn More <i class="bi bi-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 4. FITNESS PROGRAMS ==================== -->
+    <section id="programs" class="section programs-section">
+        <div class="container">
+            <div class="text-center mb-5 reveal" data-reveal="fade-up">
+                <p class="section-subtitle">What We Offer</p>
+                <h2 class="section-title">Our Fitness Programs</h2>
+                <p class="section-text mx-auto" style="max-width:600px">
+                    Whether your goal is building muscle, losing weight, or improving flexibility, we have a program
+                    designed to get you there. Every program is led by certified coaches and scaled to your level.
+                </p>
+            </div>
+            <div class="row g-4">
+                <!-- Strength Training -->
+                <div class="col-md-6 col-lg-4 reveal" data-reveal="fade-up">
+                    <article class="card program-card h-100">
+                        <div class="program-img-wrapper">
+                            <img src="https://images.pexels.com/photos/5327456/pexels-photo-5327456.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="Man lifting a barbell during strength training" loading="lazy">
+                            <span class="badge bg-accent program-difficulty">Intermediate</span>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Strength Training</h3>
+                            <p class="card-text">Build raw power with compound lifts, progressive overload, and structured periodization. Perfect for increasing muscle mass and bone density.</p>
+                            <div class="program-meta mb-3">
+                                <span><i class="bi bi-clock"></i> 60 min</span>
+                                <span><i class="bi bi-bar-chart-fill"></i> Intermediate</span>
+                            </div>
+                            <a href="#contact" class="btn btn-outline-cta mt-auto" data-program="Strength Training">View Program</a>
+                        </div>
+                    </article>
+                </div>
+                <!-- Weight Loss -->
+                <div class="col-md-6 col-lg-4 reveal" data-reveal="fade-up" data-reveal-delay="100">
+                    <article class="card program-card h-100">
+                        <div class="program-img-wrapper">
+                            <img src="https://images.pexels.com/photos/3757938/pexels-photo-3757938.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="Woman running on a treadmill for weight loss" loading="lazy">
+                            <span class="badge bg-success program-difficulty">Beginner</span>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Weight Loss</h3>
+                            <p class="card-text">High-calorie-burn sessions combining cardio and metabolic conditioning. Shed fat sustainably with science-backed programming.</p>
+                            <div class="program-meta mb-3">
+                                <span><i class="bi bi-clock"></i> 45 min</span>
+                                <span><i class="bi bi-bar-chart-fill"></i> Beginner</span>
+                            </div>
+                            <a href="#contact" class="btn btn-outline-cta mt-auto" data-program="Weight Loss">View Program</a>
+                        </div>
+                    </article>
+                </div>
+                <!-- Muscle Building -->
+                <div class="col-md-6 col-lg-4 reveal" data-reveal="fade-up" data-reveal-delay="200">
+                    <article class="card program-card h-100">
+                        <div class="program-img-wrapper">
+                            <img src="https://images.pexels.com/photos/5327536/pexels-photo-5327536.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="Muscular man flexing during muscle building training" loading="lazy">
+                            <span class="badge bg-accent program-difficulty">Advanced</span>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Muscle Building</h3>
+                            <p class="card-text">Hypertrophy-focused training with volume programming, time-under-tension techniques, and targeted split routines for maximum growth.</p>
+                            <div class="program-meta mb-3">
+                                <span><i class="bi bi-clock"></i> 75 min</span>
+                                <span><i class="bi bi-bar-chart-fill"></i> Advanced</span>
+                            </div>
+                            <a href="#contact" class="btn btn-outline-cta mt-auto" data-program="Muscle Building">View Program</a>
+                        </div>
+                    </article>
+                </div>
+                <!-- CrossFit -->
+                <div class="col-md-6 col-lg-4 reveal" data-reveal="fade-up">
+                    <article class="card program-card h-100">
+                        <div class="program-img-wrapper">
+                            <img src="https://images.pexels.com/photos/3253499/pexels-photo-3253499.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="Athlete flipping a tire during CrossFit workout" loading="lazy">
+                            <span class="badge bg-danger program-difficulty">Advanced</span>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">CrossFit</h3>
+                            <p class="card-text">Functional fitness at its finest. WODs combining Olympic lifts, gymnastics, and metabolic conditioning to build all-around athleticism.</p>
+                            <div class="program-meta mb-3">
+                                <span><i class="bi bi-clock"></i> 60 min</span>
+                                <span><i class="bi bi-bar-chart-fill"></i> Advanced</span>
+                            </div>
+                            <a href="#contact" class="btn btn-outline-cta mt-auto" data-program="CrossFit">View Program</a>
+                        </div>
+                    </article>
+                </div>
+                <!-- HIIT -->
+                <div class="col-md-6 col-lg-4 reveal" data-reveal="fade-up" data-reveal-delay="100">
+                    <article class="card program-card h-100">
+                        <div class="program-img-wrapper">
+                            <img src="https://images.pexels.com/photos/6390240/pexels-photo-6390240.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="Man doing battle rope HIIT workout" loading="lazy">
+                            <span class="badge bg-accent program-difficulty">Intermediate</span>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">HIIT</h3>
+                            <p class="card-text">High-Intensity Interval Training. Short, explosive bursts of work followed by active recovery to torch calories and boost endurance.</p>
+                            <div class="program-meta mb-3">
+                                <span><i class="bi bi-clock"></i> 30 min</span>
+                                <span><i class="bi bi-bar-chart-fill"></i> Intermediate</span>
+                            </div>
+                            <a href="#contact" class="btn btn-outline-cta mt-auto" data-program="HIIT">View Program</a>
+                        </div>
+                    </article>
+                </div>
+                <!-- Yoga & Flexibility -->
+                <div class="col-md-6 col-lg-4 reveal" data-reveal="fade-up" data-reveal-delay="200">
+                    <article class="card program-card h-100">
+                        <div class="program-img-wrapper">
+                            <img src="https://images.pexels.com/photos/8436610/pexels-photo-8436610.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="Group practicing yoga poses in a studio" loading="lazy">
+                            <span class="badge bg-success program-difficulty">Beginner</span>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Yoga & Flexibility</h3>
+                            <p class="card-text">Improve mobility, balance, and mind-body connection. From restorative Yin to dynamic Vinyasa flows for all levels.</p>
+                            <div class="program-meta mb-3">
+                                <span><i class="bi bi-clock"></i> 60 min</span>
+                                <span><i class="bi bi-bar-chart-fill"></i> Beginner</span>
+                            </div>
+                            <a href="#contact" class="btn btn-outline-cta mt-auto" data-program="Yoga & Flexibility">View Program</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 5. WHY CHOOSE FITFORGE ==================== -->
+    <section id="why-choose" class="section why-section">
+        <div class="container">
+            <div class="text-center mb-5 reveal" data-reveal="fade-up">
+                <p class="section-subtitle">Why FitForge</p>
+                <h2 class="section-title">Why Choose FitForge?</h2>
+                <p class="section-text mx-auto" style="max-width:600px">
+                    We are not just a place to work out. We are a results-driven fitness community committed to your transformation.
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 reveal" data-reveal="fade-up">
+                    <div class="why-card h-100">
+                        <div class="why-icon"><i class="bi bi-broadcast-pin"></i></div>
+                        <h3>State-of-the-Art Equipment</h3>
+                        <p>Over 200 machines from Hammer Strength, Technogym, and Rogue. Free weights, cable systems, and functional rigs.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 reveal" data-reveal="fade-up" data-reveal-delay="100">
+                    <div class="why-card h-100">
+                        <div class="why-icon"><i class="bi bi-person-badge-fill"></i></div>
+                        <h3>Certified Professional Trainers</h3>
+                        <p>Every coach holds NASM, ACE, or NSCA certifications with years of hands-on experience transforming lives.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 reveal" data-reveal="fade-up" data-reveal-delay="200">
+                    <div class="why-card h-100">
+                        <div class="why-icon"><i class="bi bi-clipboard2-heart-fill"></i></div>
+                        <h3>Personalized Nutrition Plans</h3>
+                        <p>Registered dietitians build meal plans around your goals, preferences, and lifestyle for sustainable results.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 reveal" data-reveal="fade-up">
+                    <div class="why-card h-100">
+                        <div class="why-icon"><i class="bi bi-graph-up-arrow"></i></div>
+                        <h3>Progress Tracking</h3>
+                        <p>Track workouts, body composition, and PRs with our app. Data-driven adjustments keep you improving.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 reveal" data-reveal="fade-up" data-reveal-delay="100">
+                    <div class="why-card h-100">
+                        <div class="why-icon"><i class="bi bi-clock-history"></i></div>
+                        <h3>Flexible Training Hours</h3>
+                        <p>Open 5 AM to 11 PM, six days a week. Early bird or night owl, we fit your schedule, not the other way around.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 reveal" data-reveal="fade-up" data-reveal-delay="200">
+                    <div class="why-card h-100">
+                        <div class="why-icon"><i class="bi bi-trophy-fill"></i></div>
+                        <h3>Goal-Oriented Programs</h3>
+                        <p>Whether it is a marathon, a powerlifting meet, or your first pull-up, we build the roadmap to get you there.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 6. TRAINERS SECTION ==================== -->
+    <section id="trainers" class="section trainers-section">
+        <div class="container">
+            <div class="text-center mb-5 reveal" data-reveal="fade-up">
+                <p class="section-subtitle">Meet The Team</p>
+                <h2 class="section-title">Our Expert Trainers</h2>
+                <p class="section-text mx-auto" style="max-width:600px">
+                    Our coaches are more than trainers. They are mentors, motivators, and partners in your fitness journey.
+                </p>
+            </div>
+            <div class="row g-4">
+                <!-- Alex Carter -->
+                <div class="col-sm-6 col-lg-3 reveal" data-reveal="fade-up">
+                    <div class="trainer-card">
+                        <div class="trainer-img-wrapper">
+                            <img src="https://images.pexels.com/photos/32695885/pexels-photo-32695885.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Alex Carter, Head Fitness Coach at FitForge" loading="lazy">
+                            <div class="trainer-social">
+                                <a href="#" aria-label="Alex Carter on Facebook"><i class="bi bi-facebook"></i></a>
+                                <a href="#" aria-label="Alex Carter on Instagram"><i class="bi bi-instagram"></i></a>
+                                <a href="#" aria-label="Alex Carter on Twitter"><i class="bi bi-twitter-x"></i></a>
+                                <a href="#" aria-label="Alex Carter on LinkedIn"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="trainer-info">
+                            <h3>Alex Carter</h3>
+                            <p class="trainer-role">Head Fitness Coach</p>
+                            <p class="trainer-spec">Strength & Conditioning</p>
+                            <div class="trainer-meta">
+                                <span><i class="bi bi-award"></i> 12 yrs</span>
+                                <span><i class="bi bi-people-fill"></i> 500+ clients</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sarah Williams -->
+                <div class="col-sm-6 col-lg-3 reveal" data-reveal="fade-up" data-reveal-delay="100">
+                    <div class="trainer-card">
+                        <div class="trainer-img-wrapper">
+                            <img src="https://images.pexels.com/photos/2011383/pexels-photo-2011383.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Sarah Williams, Yoga Instructor at FitForge" loading="lazy">
+                            <div class="trainer-social">
+                                <a href="#" aria-label="Sarah Williams on Facebook"><i class="bi bi-facebook"></i></a>
+                                <a href="#" aria-label="Sarah Williams on Instagram"><i class="bi bi-instagram"></i></a>
+                                <a href="#" aria-label="Sarah Williams on Twitter"><i class="bi bi-twitter-x"></i></a>
+                                <a href="#" aria-label="Sarah Williams on LinkedIn"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="trainer-info">
+                            <h3>Sarah Williams</h3>
+                            <p class="trainer-role">Yoga Instructor</p>
+                            <p class="trainer-spec">Vinyasa & Yin Yoga</p>
+                            <div class="trainer-meta">
+                                <span><i class="bi bi-award"></i> 8 yrs</span>
+                                <span><i class="bi bi-people-fill"></i> 300+ clients</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Daniel Smith -->
+                <div class="col-sm-6 col-lg-3 reveal" data-reveal="fade-up" data-reveal-delay="200">
+                    <div class="trainer-card">
+                        <div class="trainer-img-wrapper">
+                            <img src="https://images.pexels.com/photos/3912944/pexels-photo-3912944.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Daniel Smith, Strength Coach at FitForge" loading="lazy">
+                            <div class="trainer-social">
+                                <a href="#" aria-label="Daniel Smith on Facebook"><i class="bi bi-facebook"></i></a>
+                                <a href="#" aria-label="Daniel Smith on Instagram"><i class="bi bi-instagram"></i></a>
+                                <a href="#" aria-label="Daniel Smith on Twitter"><i class="bi bi-twitter-x"></i></a>
+                                <a href="#" aria-label="Daniel Smith on LinkedIn"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="trainer-info">
+                            <h3>Daniel Smith</h3>
+                            <p class="trainer-role">Strength Coach</p>
+                            <p class="trainer-spec">Powerlifting & CrossFit</p>
+                            <div class="trainer-meta">
+                                <span><i class="bi bi-award"></i> 10 yrs</span>
+                                <span><i class="bi bi-people-fill"></i> 400+ clients</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Emma Johnson -->
+                <div class="col-sm-6 col-lg-3 reveal" data-reveal="fade-up" data-reveal-delay="300">
+                    <div class="trainer-card">
+                        <div class="trainer-img-wrapper">
+                            <img src="https://images.pexels.com/photos/37963582/pexels-photo-37963582.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Emma Johnson, Nutrition and Fitness Coach at FitForge" loading="lazy">
+                            <div class="trainer-social">
+                                <a href="#" aria-label="Emma Johnson on Facebook"><i class="bi bi-facebook"></i></a>
+                                <a href="#" aria-label="Emma Johnson on Instagram"><i class="bi bi-instagram"></i></a>
+                                <a href="#" aria-label="Emma Johnson on Twitter"><i class="bi bi-twitter-x"></i></a>
+                                <a href="#" aria-label="Emma Johnson on LinkedIn"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="trainer-info">
+                            <h3>Emma Johnson</h3>
+                            <p class="trainer-role">Nutrition & Fitness Coach</p>
+                            <p class="trainer-spec">Weight Management</p>
+                            <div class="trainer-meta">
+                                <span><i class="bi bi-award"></i> 7 yrs</span>
+                                <span><i class="bi bi-people-fill"></i> 350+ clients</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 7. PRICING PLANS ==================== -->
+    <section id="pricing" class="section pricing-section">
+        <div class="container">
+            <div class="text-center mb-5 reveal" data-reveal="fade-up">
+                <p class="section-subtitle">Membership Plans</p>
+                <h2 class="section-title">Pricing Plans</h2>
+                <p class="section-text mx-auto" style="max-width:600px">
+                    Choose the plan that fits your goals. No hidden fees, no contracts. Cancel anytime.
+                </p>
+                <!-- Monthly/Yearly Toggle -->
+                <div class="pricing-toggle mt-4">
+                    <span class="toggle-label" id="monthlyLabel">Monthly</span>
+                    <div class="form-check form-switch d-inline-block mx-2">
+                        <input class="form-check-input" type="checkbox" role="switch" id="pricingToggle" aria-label="Toggle between monthly and yearly pricing">
+                    </div>
+                    <span class="toggle-label" id="yearlyLabel">Yearly</span>
+                    <span class="badge bg-success ms-2">Save 20%</span>
+                </div>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <!-- Basic -->
+                <div class="col-md-6 col-lg-4 reveal" data-reveal="fade-up">
+                    <div class="card pricing-card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="pricing-name">Basic</h3>
+                            <p class="pricing-desc">Perfect for getting started on your fitness journey.</p>
+                            <div class="pricing-price">
+                                <span class="currency">$</span>
+                                <span class="amount" data-monthly="29" data-yearly="23">29</span>
+                                <span class="period">/month</span>
+                            </div>
+                            <ul class="pricing-features list-unstyled">
+                                <li><i class="bi bi-check-circle-fill"></i> Gym Access</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Locker Access</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Free Fitness Assessment</li>
+                                <li class="text-muted"><i class="bi bi-x-circle"></i> Group Classes</li>
+                                <li class="text-muted"><i class="bi bi-x-circle"></i> Personal Training</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-cta mt-auto" data-plan="Basic" data-bs-toggle="offcanvas" data-bs-target="#joinOffcanvas">Choose Basic</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pro - Most Popular -->
+                <div class="col-md-6 col-lg-4 reveal" data-reveal="fade-up" data-reveal-delay="100">
+                    <div class="card pricing-card pricing-popular h-100">
+                        <div class="popular-badge">Most Popular</div>
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="pricing-name">Pro</h3>
+                            <p class="pricing-desc">Our most popular plan for serious fitness enthusiasts.</p>
+                            <div class="pricing-price">
+                                <span class="currency">$</span>
+                                <span class="amount" data-monthly="59" data-yearly="47">59</span>
+                                <span class="period">/month</span>
+                            </div>
+                            <ul class="pricing-features list-unstyled">
+                                <li><i class="bi bi-check-circle-fill"></i> Unlimited Gym Access</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Group Classes</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Personal Training - 2 Sessions</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Nutrition Consultation</li>
+                                <li class="text-muted"><i class="bi bi-x-circle"></i> Progress Tracking</li>
+                            </ul>
+                            <a href="#" class="btn btn-cta mt-auto" data-plan="Pro" data-bs-toggle="offcanvas" data-bs-target="#joinOffcanvas">Choose Pro</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Elite -->
+                <div class="col-md-6 col-lg-4 reveal" data-reveal="fade-up" data-reveal-delay="200">
+                    <div class="card pricing-card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="pricing-name">Elite</h3>
+                            <p class="pricing-desc">The complete package for maximum results and support.</p>
+                            <div class="pricing-price">
+                                <span class="currency">$</span>
+                                <span class="amount" data-monthly="99" data-yearly="79">99</span>
+                                <span class="period">/month</span>
+                            </div>
+                            <ul class="pricing-features list-unstyled">
+                                <li><i class="bi bi-check-circle-fill"></i> Unlimited Gym Access</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Unlimited Group Classes</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Personal Training</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Nutrition Plan</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Progress Tracking</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-cta mt-auto" data-plan="Elite" data-bs-toggle="offcanvas" data-bs-target="#joinOffcanvas">Choose Elite</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 8. CLASS SCHEDULE ==================== -->
+    <section id="schedule" class="section schedule-section">
+        <div class="container">
+            <div class="text-center mb-5 reveal" data-reveal="fade-up">
+                <p class="section-subtitle">Weekly Schedule</p>
+                <h2 class="section-title">Class Schedule</h2>
+                <p class="section-text mx-auto" style="max-width:600px">
+                    Browse our weekly classes and book your spot. All classes are led by certified instructors.
+                </p>
+            </div>
+            <!-- Bootstrap Pills / Tabs -->
+            <ul class="nav nav-pills mb-4 justify-content-center schedule-tabs flex-wrap reveal" data-reveal="fade-up" id="scheduleTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#mon" type="button" role="tab" aria-selected="true">Monday</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#tue" type="button" role="tab">Tuesday</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#wed" type="button" role="tab">Wednesday</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#thu" type="button" role="tab">Thursday</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#fri" type="button" role="tab">Friday</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#sat" type="button" role="tab">Saturday</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="scheduleTabContent">
+                <!-- Monday -->
+                <div class="tab-pane fade show active" id="mon" role="tabpanel">
+                    <div class="row g-3">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="schedule-card">
+                                <div class="schedule-time">6:00 AM</div>
+                                <h4>HIIT Blast</h4>
+                                <p><i class="bi bi-person"></i> Alex Carter</p>
+                                <div class="schedule-meta"><span><i class="bi bi-clock"></i> 30 min</span> <span class="badge bg-accent">Intermediate</span></div>
+                                <button class="btn btn-sm btn-outline-cta book-class" data-class="HIIT Blast - Monday 6:00 AM">Book Class</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="schedule-card">
+                                <div class="schedule-time">9:00 AM</div>
+                                <h4>Yoga Flow</h4>
+                                <p><i class="bi bi-person"></i> Sarah Williams</p>
+                                <div class="schedule-meta"><span><i class="bi bi-clock"></i> 60 min</span> <span class="badge bg-success">Beginner</span></div>
+                                <button class="btn btn-sm btn-outline-cta book-class" data-class="Yoga Flow - Monday 9:00 AM">Book Class</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="schedule-card">
+                                <div class="schedule-time">6:00 PM</div>
+                                <h4>Strength Training</h4>
+                                <p><i class="bi bi-person"></i> Daniel Smith</p>
+                                <div class="schedule-meta"><span><i class="bi bi-clock"></i> 60 min</span> <span class="badge bg-accent">Intermediate</span></div>
+                                <button class="btn btn-sm btn-outline-cta book-class" data-class="Strength Training - Monday 6:00 PM">Book Class</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tuesday -->
+                <div class="tab-pane fade" id="tue" role="tabpanel">
+                    <div class="row g-3">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="schedule-card">
+                                <div class="schedule-time">7:00 AM</div>
+                                <h4>CrossFit WOD</h4>
+                                <p><i class="bi bi-person"></i> Daniel Smith</p>
+                                <div class="schedule-meta"><span><i class="bi bi-clock"></i> 60 min</span> <span class="badge bg-danger">Advanced</span></div>
+                                <button class="btn btn-sm btn-outline-cta book-class" data-class="CrossFit WOD - Tuesday 7:00 AM">Book Class</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="schedule-card">
+                                <div class="schedule-time">10:00 AM</div>
+                                <h4>Zumba</h4>
+                                <p><i class="bi bi-person"></i> Emma Johnson</p>
+                                <div class="schedule-meta"><span><i class="bi bi-clock"></i> 45 min</span> <span class="badge bg-success">Beginner</span></div>
+                                <button class="btn btn-sm btn-outline-cta book-class" data-class="Zumba - Tuesday 10:00 AM">Book Class</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="schedule-card">
+                                <div class="schedule-time">7:00 PM</div>
+                                <h4>Boxing</h4>
+                                <p><i class="bi bi-person"></i> Alex Carter</p>
+                                <div class="schedule-meta"><span><i class="bi bi-clock"></i> 45 min</span> <span class="badge bg-accent">Intermediate</span></div>
+                                <button class="btn btn-sm btn-outline-cta book-class" data-class="Boxing - Tuesday 7:00 PM">Book Class</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Wednesday -->
+                <div class="tab-pane fade" id="wed" role="tabpanel">
+                    <div class="row g-3">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="schedule-card">
+                                <div class="schedule-time">6:00 AM</div>
+                                <h4>HIIT Blast</h4>
+                                <p><i class="bi bi-person"></i> Alex Carter</p>
+                                <div class="schedule-meta"><span><i class="bi bi-clock"></i> 30 min</span> <span class="badge bg-accent">Intermediate</span></div>
+                                <button class="btn btn-sm btn-outline-cta book-class" data-class="HIIT Blast - Wednesday 6:00 AM">Book Class</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="schedule-card">
+                                <div class="schedule-time">9:00 AM</div>
+                                <h4>Yoga Flow</h4>
+                                <p><i class="bi bi-person"></i> Sarah Williams</p>
+                                <div class="schedule-meta"><span><i class="bi bi-clock"></i> 60 min</span> <span class="badge bg-success">Beginner</span></div>
+                                <button class="btn btn-sm btn-outline-cta book-class" data-class="Yoga Flow - Wednesday 9:00 AM">Book Class</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="schedule-card">
+                                <div class="schedule-time">6:00 PM</div>
+                                <h4>Muscle Building</h4>
+                                <p><i class="bi bi-person"></i> Daniel Smith</p>
+                                <div class="schedule-meta"><span><i class="bi bi-clock"></i> 75 min</span> <span class="badge bg-danger">Advanced</span></div>
+                                <button class="btn btn-sm btn-outline-cta book-class" data-class="Muscle Building - Wednesday 6:00 PM">Book Class</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Thursday -->
+                <div class="tab-pane fade" id="thu" role="tabpanel">
+                    <div class="row g-3">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="schedule-card">
+                                <div class="schedule-time">7:00 AM</div>
+                                <h4>CrossFit WOD</h4>
+                                <p><i class="bi bi-person"></i> Daniel Smith</p>
+                                <div class="schedule-meta"><span><i class="bi bi-clock"></i> 60 min</span> <span class="badge bg-danger">Advanced</span></div>
+                                <button class="btn btn-sm btn-outline-cta book-class" data-class="CrossFit WOD - Thursday 7:00 AM">Book Class</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="schedule-card">
+                                <div class="schedule-time">10:00 AM</div>
+                                <h4>Zumba</h4>
+                                <p><i class="bi bi-person"></i> Emma Johnson</p>
+                                <div class="schedule-meta"><span><i class="bi bi-clock"></i> 45 min</span> <span class="badge bg-success">Beginner</span></div>
+                                <button class="btn btn-sm btn-outline-cta book-class" data-class="Zumba - Thursday 10:00 AM">Book Class</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="schedule-card">
+                                <div class="schedule-time">7:00 PM</div>
+                                <h4>Boxing</h4>
+                                <p><i class="bi bi-person"></i> Alex Carter</p>
+                                <div class="schedule-meta"><span><i class="bi bi-clock"></i> 45 min</span> <span class="badge bg-accent">Intermediate</span></div>
+                                <button class="btn btn-sm btn-outline-cta book-class" data-class="Boxing - Thursday 7:00 PM">Book Class</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Friday -->
+                <div class="tab-pane fade" id="fri" role="tabpanel">
+                    <div class="row g-3">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="schedule-card">
+                                <div class="schedule-time">6:00 AM</div>
+                                <h4>HIIT Blast</h4>
+                                <p><i class="bi bi-person"></i> Alex Carter</p>
+                                <div class="schedule-meta"><span><i class="bi bi-clock"></i> 30 min</span> <span class="badge bg-accent">Intermediate</span></div>
+                                <button class="btn btn-sm btn-outline-cta book-class" data-class="HIIT Blast - Friday 6:00 AM">Book Class</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="schedule-card">
+                                <div class="schedule-time">9:00 AM</div>
+                                <h4>Yoga Flow</h4>
+                                <p><i class="bi bi-person"></i> Sarah Williams</p>
+                                <div class="schedule-meta"><span><i class="bi bi-clock"></i> 60 min</span> <span class="badge bg-success">Beginner</span></div>
+                                <button class="btn btn-sm btn-outline-cta book-class" data-class="Yoga Flow - Friday 9:00 AM">Book Class</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="schedule-card">
+                                <div class="schedule-time">6:00 PM</div>
+                                <h4>Strength Training</h4>
+                                <p><i class="bi bi-person"></i> Daniel Smith</p>
+                                <div class="schedule-meta"><span><i class="bi bi-clock"></i> 60 min</span> <span class="badge bg-accent">Intermediate</span></div>
+                                <button class="btn btn-sm btn-outline-cta book-class" data-class="Strength Training - Friday 6:00 PM">Book Class</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Saturday -->
+                <div class="tab-pane fade" id="sat" role="tabpanel">
+                    <div class="row g-3">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="schedule-card">
+                                <div class="schedule-time">8:00 AM</div>
+                                <h4>CrossFit WOD</h4>
+                                <p><i class="bi bi-person"></i> Daniel Smith</p>
+                                <div class="schedule-meta"><span><i class="bi bi-clock"></i> 60 min</span> <span class="badge bg-danger">Advanced</span></div>
+                                <button class="btn btn-sm btn-outline-cta book-class" data-class="CrossFit WOD - Saturday 8:00 AM">Book Class</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="schedule-card">
+                                <div class="schedule-time">10:00 AM</div>
+                                <h4>Zumba</h4>
+                                <p><i class="bi bi-person"></i> Emma Johnson</p>
+                                <div class="schedule-meta"><span><i class="bi bi-clock"></i> 45 min</span> <span class="badge bg-success">Beginner</span></div>
+                                <button class="btn btn-sm btn-outline-cta book-class" data-class="Zumba - Saturday 10:00 AM">Book Class</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="schedule-card">
+                                <div class="schedule-time">12:00 PM</div>
+                                <h4>Boxing</h4>
+                                <p><i class="bi bi-person"></i> Alex Carter</p>
+                                <div class="schedule-meta"><span><i class="bi bi-clock"></i> 45 min</span> <span class="badge bg-accent">Intermediate</span></div>
+                                <button class="btn btn-sm btn-outline-cta book-class" data-class="Boxing - Saturday 12:00 PM">Book Class</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 9. MEMBERSHIP CTA ==================== -->
+    <section class="cta-banner">
+        <div class="cta-overlay"></div>
+        <div class="container position-relative text-center">
+            <h2 class="cta-title reveal" data-reveal="fade-up">Ready to Transform Your Body?</h2>
+            <p class="cta-text reveal" data-reveal="fade-up" data-reveal-delay="100">
+                Join FitForge today and take the first step toward a stronger, healthier you.
+            </p>
+            <a href="#" class="btn btn-cta btn-lg mt-3 reveal" data-reveal="fade-up" data-reveal-delay="200" data-bs-toggle="offcanvas" data-bs-target="#joinOffcanvas">
+                Join FitForge Today
+            </a>
+        </div>
+    </section>
+
+    <!-- ==================== 10. TESTIMONIALS ==================== -->
+    <section id="testimonials" class="section testimonials-section">
+        <div class="container">
+            <div class="text-center mb-5 reveal" data-reveal="fade-up">
+                <p class="section-subtitle">Success Stories</p>
+                <h2 class="section-title">What Our Members Say</h2>
+                <p class="section-text mx-auto" style="max-width:600px">
+                    Real results from real members. Here is what they have to say about their FitForge experience.
+                </p>
+            </div>
+            <!-- Bootstrap Carousel -->
+            <div id="testimonialCarousel" class="carousel slide reveal" data-reveal="fade-up" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Testimonial 1 -->
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-stars mb-3">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    </div>
+                                    <p class="testimonial-text">"FitForge completely changed the way I approach fitness. The trainers are knowledgeable, supportive, and motivating. I lost 30 pounds in 6 months and gained a whole new lifestyle."</p>
+                                    <div class="testimonial-author">
+                                        <img src="https://images.pexels.com/photos/16216729/pexels-photo-16216729.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Member Jessica Martinez" loading="lazy">
+                                        <div>
+                                            <h4>Jessica Martinez</h4>
+                                            <p>Member for 2 years</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-stars mb-3">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    </div>
+                                    <p class="testimonial-text">"As a beginner, I was nervous about joining a gym. The Pro plan with personal training sessions was the perfect start. My trainer Daniel made me feel confident from day one."</p>
+                                    <div class="testimonial-author">
+                                        <img src="https://images.pexels.com/photos/14236897/pexels-photo-14236897.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Member Michael Thompson" loading="lazy">
+                                        <div>
+                                            <h4>Michael Thompson</h4>
+                                            <p>Member for 1 year</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-stars mb-3">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    </div>
+                                    <p class="testimonial-text">"The CrossFit classes are intense and amazing. The community here pushes you to show up and give your best. I hit my first muscle-up in 4 months thanks to the coaching."</p>
+                                    <div class="testimonial-author">
+                                        <img src="https://images.pexels.com/photos/16120625/pexels-photo-16120625.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Member David Lee" loading="lazy">
+                                        <div>
+                                            <h4>David Lee</h4>
+                                            <p>Member for 3 years</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 4 -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-stars mb-3">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                                    </div>
+                                    <p class="testimonial-text">"The yoga classes with Sarah are the highlight of my week. They have improved my flexibility and reduced my back pain significantly. The studio is peaceful and well-equipped."</p>
+                                    <div class="testimonial-author">
+                                        <img src="https://images.pexels.com/photos/16216728/pexels-photo-16216728.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Member Ashley Brown" loading="lazy">
+                                        <div>
+                                            <h4>Ashley Brown</h4>
+                                            <p>Member for 1.5 years</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 5 -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-stars mb-3">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    </div>
+                                    <p class="testimonial-text">"The Elite plan is worth every penny. With nutrition coaching and progress tracking, I finally understand what works for my body. Down 15% body fat and feeling stronger than ever."</p>
+                                    <div class="testimonial-author">
+                                        <img src="https://images.pexels.com/photos/28970125/pexels-photo-28970125.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Member Chris Wilson" loading="lazy">
+                                        <div>
+                                            <h4>Chris Wilson</h4>
+                                            <p>Member for 2.5 years</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev" aria-label="Previous testimonial">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next" aria-label="Next testimonial">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+                <div class="carousel-indicators mt-3 position-static">
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-label="Testimonial 1"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Testimonial 2"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Testimonial 3"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="3" aria-label="Testimonial 4"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="4" aria-label="Testimonial 5"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 11. BMI CALCULATOR ==================== -->
+    <section id="bmi" class="section bmi-section">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5 reveal" data-reveal="fade-right">
+                    <p class="section-subtitle">Health Check</p>
+                    <h2 class="section-title">BMI Calculator</h2>
+                    <p class="section-text mt-3">
+                        Body Mass Index (BMI) is a measure of body fat based on your height and weight.
+                        Use our calculator to check your BMI and see which category you fall into.
+                    </p>
+                    <div class="bmi-categories mt-4">
+                        <div class="bmi-cat"><span class="cat-color" style="background:#4dabf7"></span> Underweight: &lt; 18.5</div>
+                        <div class="bmi-cat"><span class="cat-color" style="background:#51cf66"></span> Normal: 18.5 - 24.9</div>
+                        <div class="bmi-cat"><span class="cat-color" style="background:#fcc419"></span> Overweight: 25 - 29.9</div>
+                        <div class="bmi-cat"><span class="cat-color" style="background:#ff6b6b"></span> Obese: 30+</div>
+                    </div>
+                </div>
+                <div class="col-lg-7 reveal" data-reveal="fade-left">
+                    <div class="bmi-calculator-card">
+                        <form id="bmiForm" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="bmiHeight" class="form-label">Height (cm)</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-rulers"></i></span>
+                                        <input type="number" class="form-control" id="bmiHeight" placeholder="e.g. 175" min="50" max="300" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="bmiWeight" class="form-label">Weight (kg)</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-speedometer2"></i></span>
+                                        <input type="number" class="form-control" id="bmiWeight" placeholder="e.g. 70" min="10" max="500" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bmi-alert" id="bmiAlert"></div>
+                            <button type="submit" class="btn btn-cta w-100 mt-3">
+                                <i class="bi bi-calculator me-2"></i>Calculate BMI
+                            </button>
+                        </form>
+                        <div id="bmiResult" class="bmi-result d-none">
+                            <div class="bmi-value-row">
+                                <div>
+                                    <span class="bmi-result-label">Your BMI</span>
+                                    <span class="bmi-result-value" id="bmiValue">--</span>
+                                </div>
+                                <div>
+                                    <span class="bmi-result-label">Category</span>
+                                    <span class="bmi-result-category" id="bmiCategory">--</span>
+                                </div>
+                            </div>
+                            <div class="progress bmi-progress mt-3">
+                                <div class="progress-bar" id="bmiProgressBar" role="progressbar" style="width: 0%"></div>
+                            </div>
+                            <p class="bmi-healthy mt-3" id="bmiHealthy"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 12. GYM GALLERY ==================== -->
+    <section id="gallery" class="section gallery-section">
+        <div class="container">
+            <div class="text-center mb-5 reveal" data-reveal="fade-up">
+                <p class="section-subtitle">Our Facility</p>
+                <h2 class="section-title">Gym Gallery</h2>
+                <p class="section-text mx-auto" style="max-width:600px">
+                    Take a look inside our world-class facility. Every corner is designed to help you train better.
+                </p>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-6 col-lg-4 reveal" data-reveal="zoom-in">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="https://images.pexels.com/photos/2261481/pexels-photo-2261481.jpeg?auto=compress&cs=tinysrgb&w=1200" data-title="Weight Training Area">
+                        <img src="https://images.pexels.com/photos/2261481/pexels-photo-2261481.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Weight training area with barbells" loading="lazy">
+                        <div class="gallery-overlay"><i class="bi bi-zoom-in"></i><span>Weight Training Area</span></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 reveal" data-reveal="zoom-in" data-reveal-delay="100">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="https://images.pexels.com/photos/12250460/pexels-photo-12250460.jpeg?auto=compress&cs=tinysrgb&w=1200" data-title="Cardio Section">
+                        <img src="https://images.pexels.com/photos/12250460/pexels-photo-12250460.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Cardio section with treadmills" loading="lazy">
+                        <div class="gallery-overlay"><i class="bi bi-zoom-in"></i><span>Cardio Section</span></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 reveal" data-reveal="zoom-in" data-reveal-delay="200">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="https://images.pexels.com/photos/37677569/pexels-photo-37677569.jpeg?auto=compress&cs=tinysrgb&w=1200" data-title="Group Classes">
+                        <img src="https://images.pexels.com/photos/37677569/pexels-photo-37677569.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Group fitness class in session" loading="lazy">
+                        <div class="gallery-overlay"><i class="bi bi-zoom-in"></i><span>Group Classes</span></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 reveal" data-reveal="zoom-in">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="https://images.pexels.com/photos/2011383/pexels-photo-2011383.jpeg?auto=compress&cs=tinysrgb&w=1200" data-title="Personal Training">
+                        <img src="https://images.pexels.com/photos/2011383/pexels-photo-2011383.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Personal training session" loading="lazy">
+                        <div class="gallery-overlay"><i class="bi bi-zoom-in"></i><span>Personal Training</span></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 reveal" data-reveal="zoom-in" data-reveal-delay="100">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="https://images.pexels.com/photos/8436610/pexels-photo-8436610.jpeg?auto=compress&cs=tinysrgb&w=1200" data-title="Yoga Studio">
+                        <img src="https://images.pexels.com/photos/8436610/pexels-photo-8436610.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Yoga studio with class in session" loading="lazy">
+                        <div class="gallery-overlay"><i class="bi bi-zoom-in"></i><span>Yoga Studio</span></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 reveal" data-reveal="zoom-in" data-reveal-delay="200">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="https://images.pexels.com/photos/9545909/pexels-photo-9545909.jpeg?auto=compress&cs=tinysrgb&w=1200" data-title="Gym Interior">
+                        <img src="https://images.pexels.com/photos/9545909/pexels-photo-9545909.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Modern gym interior with equipment" loading="lazy">
+                        <div class="gallery-overlay"><i class="bi bi-zoom-in"></i><span>Gym Interior</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Modal -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content gallery-modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="galleryModalLabel">Gallery</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="" alt="" id="galleryModalImg" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== 13. FAQ SECTION ==================== -->
+    <section id="faq" class="section faq-section">
+        <div class="container">
+            <div class="text-center mb-5 reveal" data-reveal="fade-up">
+                <p class="section-subtitle">Got Questions?</p>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-text mx-auto" style="max-width:600px">
+                    Everything you need to know about joining FitForge. Still have questions? Reach out to our team.
+                </p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <!-- Breadcrumb -->
+                    <nav aria-label="breadcrumb" class="reveal" data-reveal="fade-up">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="#hero">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#about">About</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">FAQ</li>
+                        </ol>
+                    </nav>
+                    <div class="accordion reveal" data-reveal="fade-up" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    What are your membership options?
+                                </button>
+                            </h3>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We offer three membership tiers: Basic ($29/mo) for gym and locker access, Pro ($59/mo) which includes group classes and personal training sessions, and Elite ($99/mo) for the full experience with unlimited everything plus progress tracking. All plans can be billed monthly or yearly with a 20% discount on annual billing.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Do you offer personal training?
+                                </button>
+                            </h3>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes. Personal training is included in the Pro plan (2 sessions/month) and unlimited in the Elite plan. Basic members can add personal training sessions a la carte. All our trainers hold nationally recognized certifications and specialize in different areas from strength to nutrition.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Can beginners join?
+                                </button>
+                            </h3>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Absolutely. We welcome all fitness levels. Every new member gets a free fitness assessment, and our trainers will help you start at the right level. We have beginner-friendly classes and programs designed specifically for those new to fitness.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    Are group classes included?
+                                </button>
+                            </h3>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Group classes are included with the Pro and Elite memberships. Basic members can attend classes for a drop-in fee. We offer over 50 classes per week including HIIT, Yoga, CrossFit, Zumba, Boxing, and Strength Training.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    Do you provide nutrition plans?
+                                </button>
+                            </h3>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes. The Elite plan includes a personalized nutrition plan designed by our registered dietitians. Pro members get a nutrition consultation. Basic members can add nutrition coaching as an upgrade. All plans are tailored to your dietary preferences and fitness goals.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                                    What are your gym timings?
+                                </button>
+                            </h3>
+                            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We are open Monday through Saturday from 5:00 AM to 11:00 PM, and Sunday from 6:00 AM to 9:00 PM. Holiday hours may vary. Members can check the schedule board or our app for real-time updates and class bookings.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7">
+                                    Can I cancel my membership?
+                                </button>
+                            </h3>
+                            <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes. We do not lock you into contracts. You can cancel your membership anytime with 30 days notice. No cancellation fees, no hidden charges. We believe you should stay because you love it here, not because you are locked in.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 14. CONTACT SECTION ==================== -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="text-center mb-5 reveal" data-reveal="fade-up">
+                <p class="section-subtitle">Get In Touch</p>
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-text mx-auto" style="max-width:600px">
+                    Have a question or want to schedule a tour? We would love to hear from you.
+                </p>
+            </div>
+            <div class="row g-4">
+                <!-- Contact Info + Map -->
+                <div class="col-lg-5 reveal" data-reveal="fade-right">
+                    <div class="contact-info-card">
+                        <div class="contact-info-item">
+                            <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                            <div>
+                                <h4>Address</h4>
+                                <p>123 Fitness Avenue, Downtown<br>New York, NY 10001</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p><a href="tel:+1234567890" class="text-decoration-none">+1 234 567 890</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+                            <div>
+                                <h4>Email</h4>
+                                <p><a href="mailto:hello@fitforge.com" class="text-decoration-none">hello@fitforge.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-icon"><i class="bi bi-clock-fill"></i></div>
+                            <div>
+                                <h4>Opening Hours</h4>
+                                <p>Monday - Saturday: 5:00 AM - 11:00 PM<br>Sunday: 6:00 AM - 9:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Map placeholder -->
+                    <div class="map-placeholder mt-4">
+                        <iframe
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=-74.01%2C40.71%2C-73.99%2C40.73&layer=mapnik"
+                            title="FitForge gym location map"
+                            loading="lazy"
+                            style="border:0; width:100%; height:250px; border-radius:16px;"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+                <!-- Contact Form -->
+                <div class="col-lg-7 reveal" data-reveal="fade-left">
+                    <div class="contact-form-card">
+                        <form id="contactForm" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="contactName" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="contactName" placeholder="John Doe" required>
+                                    <div class="invalid-feedback">Please enter your name.</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="contactEmail" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="contactEmail" placeholder="john@example.com" required>
+                                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="contactPhone" class="form-label">Phone</label>
+                                    <input type="tel" class="form-control" id="contactPhone" placeholder="+1 234 567 890" required>
+                                    <div class="invalid-feedback">Please enter your phone number.</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="contactSubject" class="form-label">Subject</label>
+                                    <select class="form-select" id="contactSubject" required>
+                                        <option value="" selected disabled>Select a subject</option>
+                                        <option>General Inquiry</option>
+                                        <option>Membership Question</option>
+                                        <option>Personal Training</option>
+                                        <option>Class Booking</option>
+                                        <option>Other</option>
+                                    </select>
+                                    <div class="invalid-feedback">Please select a subject.</div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="contactMessage" class="form-label">Message</label>
+                                    <textarea class="form-control" id="contactMessage" rows="5" placeholder="Tell us how we can help..." required></textarea>
+                                    <div class="invalid-feedback">Please enter your message.</div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-cta w-100 btn-lg">
+                                        <span class="btn-text"><i class="bi bi-send me-2"></i>Send Message</span>
+                                        <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 15. FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4 py-5">
+                <div class="col-lg-4 col-md-12">
+                    <a class="footer-brand d-flex align-items-center gap-2 mb-3" href="#hero">
+                        <i class="bi bi-lightning-charge-fill brand-icon"></i>
+                        <span class="brand-text">FitForge</span>
+                    </a>
+                    <p class="footer-tagline">Train hard. Live strong.</p>
+                    <p class="footer-text">Your premier destination for fitness and strength. Join thousands of members who have transformed their lives at FitForge.</p>
+                    <!-- Newsletter -->
+                    <form id="newsletterForm" class="mt-3" novalidate>
+                        <label for="newsletterEmail" class="form-label text-white-50">Subscribe to our newsletter</label>
+                        <div class="input-group">
+                            <input type="email" class="form-control" id="newsletterEmail" placeholder="Your email" required>
+                            <button class="btn btn-cta" type="submit"><i class="bi bi-send"></i></button>
+                        </div>
+                        <div class="invalid-feedback d-block" id="newsletterError"></div>
+                    </form>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#programs">Programs</a></li>
+                        <li><a href="#trainers">Trainers</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h5 class="footer-title">Programs</h5>
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="#programs">Strength Training</a></li>
+                        <li><a href="#programs">HIIT</a></li>
+                        <li><a href="#programs">CrossFit</a></li>
+                        <li><a href="#programs">Yoga</a></li>
+                        <li><a href="#programs">Weight Loss</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="footer-title">Contact</h5>
+                    <ul class="footer-contact list-unstyled">
+                        <li><i class="bi bi-geo-alt"></i> 123 Fitness Avenue, Downtown, NY 10001</li>
+                        <li><i class="bi bi-telephone"></i> +1 234 567 890</li>
+                        <li><i class="bi bi-envelope"></i> hello@fitforge.com</li>
+                    </ul>
+                    <div class="footer-social mt-3">
+                        <a href="#" aria-label="FitForge on Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="FitForge on Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="FitForge on YouTube"><i class="bi bi-youtube"></i></a>
+                        <a href="#" aria-label="FitForge on Twitter"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 FitForge. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== JOIN OFFCANVAS ==================== -->
+    <div class="offcanvas offcanvas-end join-offcanvas" tabindex="-1" id="joinOffcanvas" aria-labelledby="joinOffcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="joinOffcanvasLabel"><i class="bi bi-lightning-charge-fill brand-icon me-2"></i>Join FitForge</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p class="text-white-50 mb-4">Fill out the form below and our team will get you set up with your membership.</p>
+            <form id="joinForm" novalidate>
+                <div class="mb-3">
+                    <label for="joinName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="joinName" placeholder="John Doe" required>
+                    <div class="invalid-feedback">Please enter your name.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="joinEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="joinEmail" placeholder="john@example.com" required>
+                    <div class="invalid-feedback">Please enter a valid email.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="joinPhone" class="form-label">Phone</label>
+                    <input type="tel" class="form-control" id="joinPhone" placeholder="+1 234 567 890" required>
+                    <div class="invalid-feedback">Please enter your phone number.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="joinPlan" class="form-label">Choose Plan</label>
+                    <select class="form-select" id="joinPlan" required>
+                        <option value="" selected disabled>Select a plan</option>
+                        <option>Basic - $29/month</option>
+                        <option>Pro - $59/month</option>
+                        <option>Elite - $99/month</option>
+                    </select>
+                    <div class="invalid-feedback">Please select a plan.</div>
+                </div>
+                <button type="submit" class="btn btn-cta w-100 btn-lg">
+                    <span class="btn-text">Start Membership</span>
+                    <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ==================== TOAST CONTAINER ==================== -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3" id="toastContainer" style="z-index: 1090"></div>
+
+    <!-- ==================== BACK TO TOP BUTTON ==================== -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+</body>
+</html>
